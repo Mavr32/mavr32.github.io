@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mavr32 — GitHub профиль</title>
-  <!-- External CSS -->
+  <title>Mavr32 — Hermes Skills Market & AI Solutions</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome CDN for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -15,7 +13,7 @@
   <header id="home">
     <div class="hero">
       <h1>Mavr32</h1>
-      <p><i class="fas fa-terminal"></i> GitHub: <a href="https://github.com/Mavr32" target="_blank">github.com/Mavr32</a></p>
+      <p><i class="fas fa-robot"></i> Hermes AI — Skills Market &middot; <i class="fab fa-github"></i> <a href="https://github.com/Mavr32" target="_blank">github.com/Mavr32</a></p>
     </div>
   </header>
 
@@ -23,6 +21,7 @@
   <nav>
     <ul>
       <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#hermes"><i class="fas fa-robot"></i> Hermes Skills</a></li>
       <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
       <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
@@ -31,70 +30,229 @@
   <!-- About Section -->
   <section id="about">
     <h2><i class="fas fa-user"></i> About</h2>
-    <p>Разработчик и энтузиаст open-source. Интересуюсь автоматизацией, DevOps, Telegram-ботами, встраиваемыми системами и AI-технологиями.</p>
+    <p>Разработчик экосистемы <strong>Hermes AI</strong> — создаю готовые модули (скиллы) для автоматизации бизнеса и жизни. Интеграции с Telegram, YouTube, AI, OpenWrt. Все модули работают на вашем сервере, данные не передаются третьим лицам.</p>
     <ul>
-      <li><i class="fas fa-envelope"></i> mavr32@mail.ru</li>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:mavr32@mail.ru">mavr32@mail.ru</a></li>
       <li><i class="fab fa-github"></i> <a href="https://github.com/Mavr32" target="_blank">github.com/Mavr32</a></li>
+      <li><i class="fas fa-robot"></i> Hermes AI ecosystem</li>
       <li><i class="fas fa-map-marker-alt"></i> Россия</li>
     </ul>
   </section>
 
+  <!-- Hermes Skills Section -->
+  <section id="hermes">
+    <h2><i class="fas fa-robot"></i> Hermes Skills Market</h2>
+    <p class="section-subtitle">Готовые модули для Hermes AI: мониторинг, аналитика, генерация контента, юридическая помощь. Установил — и работает.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-num">9</span> Модулей готово</div>
+      <div class="stat"><span class="stat-num">24/7</span> Работа без перерывов</div>
+      <div class="stat"><span class="stat-num">~5 мин</span> Время установки</div>
+      <div class="stat"><span class="stat-num">Свой</span> Сервер</div>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card">
+        <div class="skill-icon">🖥</div>
+        <h3>Bot Monitor</h3>
+        <span class="price">500 ₽ разово</span>
+        <p>Полный мониторинг Telegram-ботов: статус, логи, авто-рестарт, уведомления.</p>
+        <ul>
+          <li>→ Статус всех ботов в реальном времени</li>
+          <li>→ Автоматический рестарт при падении</li>
+          <li>→ Логи через journalctl</li>
+          <li>→ Интеграция с NOPASSWD sudo</li>
+        </ul>
+        <span class="tech">systemd · cron · мониторинг</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Stock Analyst</h3>
+        <span class="price">1 000 ₽ разово</span>
+        <p>Биржевой аналитик для MOEX. Технический анализ, мониторинг портфеля, алерты. Без платных API.</p>
+        <ul>
+          <li>→ SMA, RSI — расчёт на истории MOEX</li>
+          <li>→ Мониторинг портфеля с прибылью/убытком</li>
+          <li>→ Алерты каждые 15 минут (пн-пт)</li>
+          <li>→ Без API-ключей — MOEX ISS бесплатно</li>
+        </ul>
+        <span class="tech">MOEX · теханализ · алерты</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>Media Generator</h3>
+        <span class="price">1 500 ₽ разово</span>
+        <p>Генерация изображений через Stable Diffusion XL. Промпты, настройки, прямо из Telegram.</p>
+        <ul>
+          <li>→ Stable Diffusion XL через HuggingFace API</li>
+          <li>→ Настраиваемые параметры (steps, CFG, размер)</li>
+          <li>→ Генерация видео (SVD)</li>
+          <li>→ Поддержка негативных промптов</li>
+        </ul>
+        <span class="tech">SDXL · HuggingFace · генерация</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">🎙</div>
+        <h3>Voice Processor</h3>
+        <span class="price">1 200 ₽ разово</span>
+        <p>Распознавание речи (Whisper) и синтез (Silero TTS). Полностью локально, бесплатно.</p>
+        <ul>
+          <li>→ Whisper — распознавание речи на русском</li>
+          <li>→ Silero TTS — синтез речи (4 голоса)</li>
+          <li>→ Полностью локально — без облака</li>
+          <li>→ Интеграция с Telegram-ботом</li>
+        </ul>
+        <span class="tech">Whisper · TTS · локально</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">📹</div>
+        <h3>YouTube Manager</h3>
+        <span class="price">800 ₽ разово</span>
+        <p>Скачивание, анализ, транскрипция YouTube. yt-dlp без API-ключей. <strong>Ежедневный сбор данных по 19 странам.</strong></p>
+        <ul>
+          <li>→ Скачивание видео до 1080p</li>
+          <li>→ Извлечение аудио в MP3</li>
+          <li>→ Транскрипция через Whisper</li>
+          <li>→ Анализ каналов и плейлистов</li>
+        </ul>
+        <span class="tech">yt-dlp · Whisper · анализ</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">🏖</div>
+        <h3>Sochi-Adler Monitor</h3>
+        <span class="price">800 ₽ разово</span>
+        <p>Новости, погода, курсы валют, транспорт Сочи-Адлер-Абхазия. Для жителей и туристов.</p>
+        <ul>
+          <li>→ Новости РИА + Спутник Абхазия</li>
+          <li>→ Погода OpenWeatherMap</li>
+          <li>→ Курсы валют ЦБ РФ</li>
+          <li>→ Расписание транспорта Яндекс</li>
+        </ul>
+        <span class="tech">новости · погода · RSS</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">🛒</div>
+        <h3>Yandex Market Scraper</h3>
+        <span class="price">1 500 ₽ разово</span>
+        <p>Мониторинг цен на Яндекс Маркете. Поиск товаров, сравнение, отслеживание.</p>
+        <ul>
+          <li>→ Поиск товаров с ценами</li>
+          <li>→ Мониторинг целевых цен</li>
+          <li>→ Playwright + stealth режим</li>
+          <li>→ Экспорт в JSON/CSV</li>
+        </ul>
+        <span class="tech">Playwright · парсинг · цены</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">📝</div>
+        <h3>Auto Register</h3>
+        <span class="price">2 000 ₽ разово</span>
+        <p>Автоматическая регистрация на сайтах. Playwright, распознавание форм, скриншоты.</p>
+        <ul>
+          <li>→ Автозаполнение email, пароль, поля</li>
+          <li>→ Распознавание форм по селекторам</li>
+          <li>→ Скриншоты до/после</li>
+          <li>→ Безопасное хранение паролей (.env)</li>
+        </ul>
+        <span class="tech">Playwright · автоматизация · формы</span>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon">⚖️</div>
+        <h3>Legal Blogger</h3>
+        <span class="price">1 200 ₽ разово</span>
+        <p>Юрист-помощник для блогеров. Проверка постов, шаблоны договоров, налоги, маркировка ИИ.</p>
+        <ul>
+          <li>→ Проверка контента перед публикацией</li>
+          <li>→ Шаблоны: договор рекламы, NDA, оферта</li>
+          <li>→ Калькулятор налогов (самозанятый/ИП)</li>
+          <li>→ Маркировка ИИ-контента (ФЗ-38)</li>
+        </ul>
+        <span class="tech">закон · проверка · шаблоны</span>
+      </article>
+    </div>
+
+    <div class="how-it-works">
+      <h3><i class="fas fa-cogs"></i> Как это работает</h3>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h4>Выбираете модуль</h4>
+          <p>Просматриваете каталог, выбираете нужный модуль.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h4>Получаете архив</h4>
+          <p>После оплаты бот отправляет ZIP-архив со скиллом и инструкцией.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h4>Устанавливаете</h4>
+          <p>Распаковываете в ~/.hermes/skills/, перезагружаете Hermes. Модуль работает 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects">
-    <h2><i class="fas fa-code"></i> Projects</h2>
+    <h2><i class="fas fa-code"></i> GitHub Projects</h2>
     
     <article>
       <h3><i class="fab fa-github"></i> Hermes Skills Shop</h3>
-      <p>Маркетплейс готовых модулей и навыков для Hermes AI. Мониторинг ботов, биржевой аналитик, генерация изображений и другие инструменты для автоматизации бизнеса.</p>
+      <p>Маркетплейс готовых модулей и навыков для Hermes AI. Центральный репозиторий экосистемы.</p>
       <div class="project-links">
         <a href="https://github.com/Mavr32/mavr32.github.io" target="_blank"><i class="fab fa-github"></i> Репозиторий</a>
-        <a href="https://mavr32.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> Демо</a>
+        <a href="https://mavr32.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> Сайт</a>
       </div>
     </article>
 
     <article>
       <h3><i class="fab fa-github"></i> OpenWrt Firmware Builder</h3>
-      <p>Автоматизированная сборка кастомных прошивок OpenWrt через GitHub Actions с предустановленным набором пакетов и конфигураций для роутеров.</p>
+      <p>Автоматизированная сборка кастомных прошивок OpenWrt через GitHub Actions.</p>
       <div class="project-links">
         <a href="https://github.com/Mavr32/Actions-OpenWrt" target="_blank"><i class="fab fa-github"></i> Репозиторий</a>
       </div>
     </article>
 
     <article>
-      <h3><i class="fab fa-github"></i> Telegram Bot Monitor</h3>
-      <p>Система мониторинга Telegram-ботов с автоматическим рестартом при падении, логированием через journalctl и интеграцией с systemd.</p>
-      <div class="project-links">
-        <a href="https://github.com/Mavr32" target="_blank"><i class="fab fa-github"></i> Профиль</a>
-      </div>
+      <h3><i class="fas fa-database"></i> YouTube Data Extraction (19 стран)</h3>
+      <p>Ежедневный сбор и анализ YouTube-данных по 19 странам. Автоматизированный пайплайн: yt-dlp → Whisper → аналитика → отчёты.</p>
     </article>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <p>Свяжитесь со мной через email или GitHub:</p>
+    <p>Свяжитесь со мной для приобретения модулей, сотрудничества или по вопросам:</p>
     <ul>
       <li><i class="fas fa-envelope"></i> <a href="mailto:mavr32@mail.ru">mavr32@mail.ru</a></li>
       <li><i class="fab fa-github"></i> <a href="https://github.com/Mavr32" target="_blank">github.com/Mavr32</a></li>
+      <li><i class="fab fa-telegram"></i> Поддержка через Telegram</li>
     </ul>
     <hr>
-    <form action="#">
+    <form action="https://formspree.io/f/mavr32" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your Name" required>
-
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" placeholder="Your Email" required>
-
       <label for="message">Message:</label>
       <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-
       <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 <a href="https://github.com/Mavr32">Mavr32</a>. Powered by GitHub Pages.</p>
+    <p>&copy; 2026 <a href="https://github.com/Mavr32">Mavr32</a>. Hermes Skills Market — Разработано Mavr32.</p>
+    <p><a href="#">Политика конфиденциальности</a> · <a href="#">Оферта</a></p>
   </footer>
 
 </body>

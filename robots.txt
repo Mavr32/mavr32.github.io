@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://mavr32.github.io/sitemap.xml

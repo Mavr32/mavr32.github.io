@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mavr32 — Hermes Skills Market &amp; AI Solutions</title>
+  <title>Mavr32 — Hermes AI Ecosystem</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
+  </script>
+  <!-- Custom Hit Counter -->
+  <script>
+    (function() {
+      fetch('https://mavr32.ktoto-plachet1.workers.dev/hit?page=' + encodeURIComponent(window.location.pathname), {
+        mode: 'no-cors'
+      }).catch(function() {});
+    })();
+  </script>
 </head>
 <body>
 
@@ -31,6 +47,7 @@
     <ul>
       <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
       <li><a href="#hermes"><i class="fas fa-robot"></i> Hermes Skills</a></li>
+      <li><a href="#free"><i class="fas fa-gift"></i> Бесплатно</a></li>
       <li><a href="#works"><i class="fas fa-image"></i> Примеры</a></li>
       <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
       <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -55,8 +72,8 @@
        HERMES SKILLS MARKET
        ============================================================ -->
   <section id="hermes" class="animate-on-scroll">
-    <h2><i class="fas fa-robot"></i> Hermes Skills Market</h2>
-    <p class="section-subtitle">Готовые модули для Hermes AI: мониторинг, аналитика, генерация контента, юридическая помощь. Установил — и работает.</p>
+    <h2><i class="fas fa-robot"></i> Hermes Skills — каталог модулей</h2>
+    <p class="section-subtitle">Готовые AI-модули: установил — работает 24/7. Покупка и доставка через <a href="https://t.me/Mira_Gem_Bot" target="_blank"><strong>@Mira_Gem_Bot</strong></a>.</p>
 
     <div class="stats animate-stagger">
       <div class="stat"><span class="stat-num">9</span> Модулей готово</div>
@@ -69,7 +86,6 @@
       <article class="skill-card">
         <div class="skill-icon">🖥</div>
         <h3>Bot Monitor</h3>
-        <span class="price">299₽ · €3 · $3</span>
         <p>Полный мониторинг Telegram-ботов: статус, логи, авто-рестарт, уведомления.</p>
         <ul>
           <li>→ Статус всех ботов в реальном времени</li>
@@ -78,12 +94,12 @@
           <li>→ Интеграция с NOPASSWD sudo</li>
         </ul>
         <span class="tech">systemd · cron · мониторинг</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">📊</div>
         <h3>Stock Analyst</h3>
-        <span class="price">499₽ · €5 · $5</span>
         <p>Биржевой аналитик для MOEX. Технический анализ, мониторинг портфеля, алерты. Без платных API.</p>
         <ul>
           <li>→ SMA, RSI — расчёт на истории MOEX</li>
@@ -92,12 +108,12 @@
           <li>→ Без API-ключей — MOEX ISS бесплатно</li>
         </ul>
         <span class="tech">MOEX · теханализ · алерты</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">🎨</div>
         <h3>Media Generator</h3>
-        <span class="price">699₽ · €7 · $7</span>
         <p>Генерация изображений через Stable Diffusion XL. Промпты, настройки, прямо из Telegram.</p>
         <ul>
           <li>→ Stable Diffusion XL через HuggingFace API</li>
@@ -106,12 +122,12 @@
           <li>→ Поддержка негативных промптов</li>
         </ul>
         <span class="tech">SDXL · HuggingFace · генерация</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">🎙</div>
         <h3>Voice Processor</h3>
-        <span class="price">499₽ · €5 · $5</span>
         <p>Распознавание речи (Whisper) и синтез (Silero TTS). Полностью локально, бесплатно.</p>
         <ul>
           <li>→ Whisper — распознавание речи на русском</li>
@@ -120,12 +136,12 @@
           <li>→ Интеграция с Telegram-ботом</li>
         </ul>
         <span class="tech">Whisper · TTS · локально</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">📹</div>
         <h3>YouTube Manager</h3>
-        <span class="price">399₽ · €4 · $4</span>
         <p>Скачивание, анализ, транскрипция YouTube. yt-dlp без API-ключей. <strong>Ежедневный сбор данных по 19 странам.</strong></p>
         <ul>
           <li>→ Скачивание видео до 1080p</li>
@@ -134,12 +150,12 @@
           <li>→ Анализ каналов и плейлистов</li>
         </ul>
         <span class="tech">yt-dlp · Whisper · анализ</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">🏖</div>
         <h3>Sochi-Adler Monitor</h3>
-        <span class="price">399₽ · €4 · $4</span>
         <p>Новости, погода, курсы валют, транспорт Сочи-Адлер-Абхазия. Для жителей и туристов.</p>
         <ul>
           <li>→ Новости РИА + Спутник Абхазия</li>
@@ -148,12 +164,12 @@
           <li>→ Расписание транспорта Яндекс</li>
         </ul>
         <span class="tech">новости · погода · RSS</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">🛒</div>
         <h3>Yandex Market Scraper</h3>
-        <span class="price">499₽ · €5 · $5</span>
         <p>Мониторинг цен на Яндекс Маркете. Поиск товаров, сравнение, отслеживание.</p>
         <ul>
           <li>→ Поиск товаров с ценами</li>
@@ -162,12 +178,12 @@
           <li>→ Экспорт в JSON/CSV</li>
         </ul>
         <span class="tech">Playwright · парсинг · цены</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">📝</div>
         <h3>Auto Register</h3>
-        <span class="price">699₽ · €7 · $7</span>
         <p>Автоматическая регистрация на сайтах. Playwright, распознавание форм, скриншоты.</p>
         <ul>
           <li>→ Автозаполнение email, пароль, поля</li>
@@ -176,12 +192,12 @@
           <li>→ Безопасное хранение паролей (.env)</li>
         </ul>
         <span class="tech">Playwright · автоматизация · формы</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
 
       <article class="skill-card">
         <div class="skill-icon">⚖️</div>
         <h3>Legal Blogger</h3>
-        <span class="price">499₽ · €5 · $5</span>
         <p>Юрист-помощник для блогеров. Проверка постов, шаблоны договоров, налоги, маркировка ИИ.</p>
         <ul>
           <li>→ Проверка контента перед публикацией</li>
@@ -190,14 +206,65 @@
           <li>→ Маркировка ИИ-контента (ФЗ-38)</li>
         </ul>
         <span class="tech">закон · проверка · шаблоны</span>
+        <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="skill-buy"><i class="fab fa-telegram"></i> Купить в Telegram</a>
       </article>
     </div>
+
+    <div class="market-cta">
+      <p><i class="fas fa-info-circle"></i> Все модули работают на вашем сервере. Данные не передаются третьим лицам.</p>
+      <a href="https://t.me/Mira_Gem_Bot" target="_blank" class="cta-button">
+        <i class="fab fa-telegram"></i> Перейти в магазин @Mira_Gem_Bot
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FREE CONTENT — 10% бесплатного контента
+       ============================================================ -->
+  <section id="free" class="animate-on-scroll">
+    <h2><i class="fas fa-gift"></i> Бесплатные инструменты</h2>
+    <p class="section-subtitle">Попробуйте перед покупкой — 4 бесплатных промпта и утилит для AI-автоматизации.</p>
+
+    <div class="free-grid animate-stagger">
+      <div class="free-card">
+        <div class="free-icon">🧠</div>
+        <h3>AI Prompt — Анализ аудитории</h3>
+        <p>Готовый супер-промпт для глубокого анализа целевой аудитории. Роль: маркетолог 15+ лет. 4 шага + чек-лист.</p>
+        <a href="https://github.com/Mavr32/mavr32.github.io/raw/main/free/super_prompt_01_audience_analysis.md" class="free-download" download>
+          <i class="fas fa-download"></i> Скачать .md
+        </a>
+      </div>
+
+      <div class="free-card">
+        <div class="free-icon">💬</div>
+        <h3>AI Prompt — Скрипт продаж</h3>
+        <p>Промпт для генерации скриптов продаж: холодные звонки, встречи, закрытие возражений. Роль: топ-продажник.</p>
+        <a href="https://github.com/Mavr32/mavr32.github.io/raw/main/free/super_prompt_11_sales_script.md" class="free-download" download>
+          <i class="fas fa-download"></i> Скачать .md
+        </a>
+      </div>
+
+      <div class="free-card">
+        <div class="free-icon">📊</div>
+        <h3>Шаблон — Финансовая модель</h3>
+        <p>Промпт для построения финмодели стартапа: P&amp;L, Cac/Cog, ROI, 5 вариантов сценариев.</p>
+        <a href="https://github.com/Mavr32/mavr32.github.io/raw/main/free/super_prompt_21_financial_model.md" class="free-download" download>
+          <i class="fas fa-download"></i> Скачать .md
+        </a>
+      </div>
+
+      <div class="free-card">
+        <div class="free-icon">🎬</div>
+        <h3>Чек-лист — Запуск YouTube</h3>
+        <p>50 пунктов: от идеи до первого 1000 просмотров. SEO, тренды, коллаборации, монетизация.</p>
+        <a href="https://github.com/Mavr32/mavr32.github.io/raw/main/free/super_prompt_45_video_script.md" class="free-download" download>
+          <i class="fas fa-download"></i> Скачать .md
+        </a>
+      </div>
     </div>
 
-    <hr>
-    <p style="text-align:center; font-size:0.95rem; color:var(--color-text-muted);">
-      <i class="fas fa-info-circle"></i> Все модули работают на вашем сервере. Данные не передаются третьим лицам.
-      <br>Подробнее: <a href="https://github.com/Mavr32" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+    <p class="free-more">
+      <i class="fas fa-store"></i> Все 50+ премиум-промптов — в <a href="https://t.me/Mira_Gem_Bot" target="_blank"><strong>@Mira_Gem_Bot</strong></a>
     </p>
   </section>
 
@@ -262,7 +329,7 @@
       </div>
     </div>
 
-    <!-- How It Works (встроено в секцию Примеры) -->
+    <!-- How It Works -->
     <div class="how-it-works animate-on-scroll">
       <h3><i class="fas fa-cogs"></i> Как это работает</h3>
       <div class="steps">
@@ -331,7 +398,7 @@
        ============================================================ -->
   <section id="contact" class="animate-on-scroll">
     <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <p class="section-subtitle">Есть вопрос или предложение? Напишите мне!</p>
+    <p class="section-subtitle">Есть вопрос или предложение? Напишите!</p>
 
     <div class="contact-wrapper">
       <!-- Contact Info -->
@@ -340,14 +407,14 @@
         <ul>
           <li><i class="fas fa-envelope"></i> <a href="mailto:mavr32@mail.ru">mavr32@mail.ru</a></li>
           <li><i class="fab fa-github"></i> <a href="https://github.com/Mavr32" target="_blank">github.com/Mavr32</a></li>
-          <li><i class="fab fa-telegram"></i> <a href="https://t.me/mavr32" target="_blank">@mavr32</a></li>
+          <li><i class="fab fa-telegram"></i> <a href="https://t.me/Mira_Gem_Bot" target="_blank">@Mira_Gem_Bot — магазин</a></li>
           <li><i class="fas fa-map-marker-alt"></i> Россия</li>
           <li><i class="fas fa-robot"></i> Hermes AI Ecosystem</li>
         </ul>
         <div class="social-links">
           <a href="https://github.com/Mavr32" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="mailto:mavr32@mail.ru" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://t.me/mavr32" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="https://t.me/Mira_Gem_Bot" target="_blank" aria-label="Telegram Bot"><i class="fab fa-telegram"></i></a>
         </div>
       </div>
 
@@ -383,7 +450,7 @@
        FOOTER
        ============================================================ -->
   <footer>
-    <p>&copy; 2024 <a href="https://github.com/Mavr32" target="_blank">Mavr32</a>. Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and <i class="fas fa-robot"></i> Hermes AI.</p>
+    <p>&copy; 2025 <a href="https://github.com/Mavr32" target="_blank">Mavr32</a>. Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and <i class="fas fa-robot"></i> Hermes AI.</p>
     <p><i class="fas fa-cloud"></i> Hosted on GitHub Pages &middot; <i class="fas fa-code"></i> Open Source</p>
   </footer>
 
@@ -393,39 +460,24 @@
   <script>
     (function() {
       'use strict';
-
-      /**
-       * Intersection Observer for .animate-on-scroll elements.
-       * Adds class "visible" when an element enters the viewport.
-       */
       const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-stagger');
-
       if (animateElements.length > 0 && 'IntersectionObserver' in window) {
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optionally unobserve after animation to save resources
                 observer.unobserve(entry.target);
               }
             });
           },
-          {
-            // Trigger when 10% of the element is visible
-            threshold: 0.1,
-            // Optional: offset to trigger a bit earlier
-            rootMargin: '0px 0px -40px 0px'
-          }
+          { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
         );
-
         animateElements.forEach((el) => observer.observe(el));
       } else {
-        // Fallback: show all immediately if no observer support
         animateElements.forEach((el) => el.classList.add('visible'));
       }
     })();
   </script>
-
 </body>
 </html>
